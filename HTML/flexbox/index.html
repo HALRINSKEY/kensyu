@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexblebox</title>
+    <style>
+        .box{
+            border: 1px solid #ccc;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="height: 200px; order: 1; flex-grow: 1; flex-basis: 500px;">box</div>
+        <div class="box" style="order: 2;">box</div>
+        <div class="box" style="height: 50px; order: 3;  flex-grow: 2">box</div>
+    
+    </div>
+    
+</body>
+</html>

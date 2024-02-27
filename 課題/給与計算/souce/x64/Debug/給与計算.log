@@ -1,0 +1,30 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 中間ディレクトリ (x64\Debug\) に別のプロジェクト (給与計算.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  calc.c
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(23,34): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(23,15): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(24,35): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(24,16): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(25,33): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(25,14): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(63,51): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(63,30): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(71,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(71,46): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(91,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(91,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(92,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(92,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(97,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(97,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(98,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(98,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(102,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(102,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(103,82): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(103,52): warning C4024: 'atof': の型が 1 の仮引数および実引数と異なります。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\calc.c(59,6): warning C4101: 'calc_list_line': ローカル変数は 1 度も使われていません。
+  output.c
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\output.c(35,58): warning C4047: '関数': 間接参照のレベルが 'const char *' と 'char (*)[20]' で異なっています。
+C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\output.c(35,29): warning C4024: 'atoi': の型が 1 の仮引数および実引数と異なります。
+  コードを生成中...
+  給与計算.vcxproj -> C:\Users\HARUTO YOKOGOSHI\Desktop\給与計算\souce\x64\Debug\source.exe

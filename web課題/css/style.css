@@ -1,0 +1,156 @@
+@import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    background-color: #00051a;
+    padding: 10px;
+    color: #ece6e6;
+}
+
+
+
+header{
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.title{
+    display: flex;
+
+}
+
+.logo{
+    width: 880px;
+    height: auto;
+    margin-left: auto;
+    margin-right: -40px;
+    align-items: center;
+}
+
+.hamburger{
+    flex: 0 0 32px;
+    margin-left: auto;
+
+    width: 40px;
+    height: 40px;
+    color: #fff;
+
+}
+
+.container{
+    width: 880px;
+    margin: 0 auto;
+}
+
+main h1{
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: serif;
+}
+
+section{
+    transition: background-image 2.5S ease;
+    background-image: url(../img/botti.jpg);    
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
+section .description{
+    margin: 30px auto;
+    padding: 60px 7px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.background{
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+#nav{
+    position: fixed;
+    right: -270px;
+    top: 0;
+
+    width: 270px;
+    height: 100%;
+    background-color: yellow;
+}
+
+#nav ul{
+    margin: 10px;
+    list-style: none;
+}
+
+#nav li{
+    font-size: 18px;
+    margin: 10px;
+
+    
+}
+
+.menu{
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+#nav li a{
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60;
+    text-decoration: none;
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.show{
+    transform: translate3d(-270px, 0, 0);
+}
+
+#wrapper, #nav{
+    transition: transform 0.3s;
+}
+
+@media screen and (max-width: 880px){
+    header{
+        width: 880px;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo{
+        margin-right: 10px;
+        width: 880px;
+        padding: 10px;
+    }
+
+
+    .hamburger{
+        margin-left: auto;
+    }
+
+
+}
+

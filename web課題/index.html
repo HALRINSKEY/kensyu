@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div id="wrapper" class="">
+
+    <header>
+        <div class="title">
+            <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class="hamburger" id="openNav"><img src="img/menu.png" alt="menu" width="40" height="40"></div>
+        </div>
+    </header>
+
+    <div class="container">
+
+    <main>
+
+        <div class="introduction">
+            <h1>INTRODUCTION</h1>
+        </div>
+
+        <section  id="backgtoundImg">
+
+        <div class="background" id="backgroundColor">
+
+            <div class="description">
+                <p>“ぼっちちゃん”こと後藤ひとりは会話の頭に必ず「あっ」って付けてしまう極度の人見知りで陰キャな少女。</p>
+                <br>
+                <p>そんな自分でも輝けそうなバンド活動に憧れギターを始めるも友達がいないため、</p>
+                <p>一人で毎日6時間ギターを弾く中学生時代を過ごすことに。</p>
+                <br>
+                <p>上手くなったギターの演奏動画を“ギターヒーロー”としてネットに投稿したり文化祭ライブで活躍したりする</p>
+                <p>妄想なんかをしていると、気づいたときにはバンドメンバーを見つけるどころか</p>
+                <p>友達が一人も出来ないまま高校生になっていた……！</p>
+                <br>
+                <p>ひきこもり一歩手前の彼女だったがある日“結束バンド”でドラムをやっている伊地知虹夏に</p>
+                <p>声をかけられたことで、そんな日常がほんの少しずつ変わっていく――</p>
+            </div>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; はまじあき／芳文社・アニプレックス
+    </footer>
+
+    </div>
+
+
+
+    </div>
+
+    <nav id="nav" class="">
+        <ul>
+            <div class="menu">MENU</div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="kousei.html">恒星</a></li>
+            <li><a href="#">光の中に</a></li>
+            <li><a href="#">結束バンド</a></li>
+        </ul>
+    </nav>
+    
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    const setImage = [
+    'url("img/botti.jpg")',
+    'url("img/ikuyo.png")',
+    'url("img/nijika.jpg")',
+    'url("img/ryo.png")'
+    ]
+    var i = 0;
+    var n = 1;
+
+    function changeImg(){
+        
+        document.getElementById("backgtoundImg").style.backgroundImage = setImage[n];
+        document.getElementById("backgroundColor").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+
+        i++;
+        n = i % 4;
+    }
+
+    setInterval("changeImg()",5000);
+
+
+    $(document).ready(function(){
+        $("#openNav").on('click',function(){
+            $('#wrapper,#nav').toggleClass('show');
+        });
+    });
+
+</script>
+</html>
