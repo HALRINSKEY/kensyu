@@ -1,0 +1,33 @@
+fieldset div {
+  display: flex;
+}
+
+.reg {
+  margin: 25px;
+}
+
+label,
+.prop {
+  order: 1;
+  width: 100px;
+}
+
+input,
+.val {
+  order: 2;
+  text-align: right;
+}
+
+th,
+td {
+  border: solid 1px;
+  text-align: center;
+}
+
+button{
+margin: 10px;
+}
+
+.red{
+  color: red;
+}
