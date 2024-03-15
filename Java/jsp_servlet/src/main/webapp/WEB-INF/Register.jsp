@@ -11,7 +11,7 @@
 </head>
 <body>
 	<h1>登録画面</h1>
-	<form action="RegisterConfirm.html" method="post">
+	<form action="RegisterConfirm" method="post">
 		<fieldset>
 			<legend>商品を登録してください</legend>
 			<div class="reg">

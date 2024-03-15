@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../jj_mysql_practice/src"
+		},
+		{
+			"path": "../../../../../support_system/src"
+		}
+	],
+	"settings": {
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"main\\webapp\\WEB-INF\\lib\\mysql-connector-j-8.0.33.jar",
+			"main\\webapp\\WEB-INF\\lib\\taglibs-standard-compat-1.2.5.jar",
+			"main\\webapp\\WEB-INF\\lib\\taglibs-standard-impl-1.2.5.jar",
+			"main\\webapp\\WEB-INF\\lib\\taglibs-standard-jstlel-1.2.5.jar",
+			"main\\webapp\\WEB-INF\\lib\\taglibs-standard-spec-1.2.5.jar",
+			"c:\\Program Files\\Apache Software Foundation\\Tomcat 9.0_Tomcat9.0\\lib\\jsp-api.jar",
+			"c:\\Program Files\\Apache Software Foundation\\Tomcat 9.0_Tomcat9.0\\lib\\servlet-api.jar"
+		]
+	}
+}
