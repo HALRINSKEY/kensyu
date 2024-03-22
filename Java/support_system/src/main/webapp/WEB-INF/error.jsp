@@ -8,7 +8,13 @@
 <title>エラーページ</title>
 </head>
 <body>
-</head>
+<header>
+	<p><c:out value="${user_name}"/></p>
+		
+	<form class="logout" action="Index" method="post">
+		<button type="submit">ログアウト</button>
+	</form>
+</header>
 
 <body>
 		<h1>eroor page</h1>

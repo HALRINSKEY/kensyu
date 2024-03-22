@@ -36,14 +36,14 @@ CREATE TABLE repair_table
 
 CREATE TABLE user_table
 (
-	id int NOT NULL,
+	id int NOT NULL AUTO_INCREMENT,
 	user_id varchar(64) NOT NULL,
 	password varchar(64) NOT NULL,
-	class_code int NOT NULL,
+	class_code int DEFAULT 0 NOT NULL,
 	user_name varchar(64) NOT NULL,
-	enabled int NOT NULL,
-	entry_day timestamp NOT NULL,
-	update_day timestamp NOT NULL,
+	enabled int DEFAULT 0 NOT NULL,
+	entry_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	update_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (id),
 	UNIQUE (id)
 );

@@ -1,11 +1,17 @@
 package controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import beans.SearchBean;
+import model.SearchDB;
+
 
 /**
  * Servlet implementation class DetailWindow
@@ -26,8 +32,22 @@ public class DetailWindow extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		SearchBean detailBean = new SearchBean();
+		SearchDB sd = new SearchDB();
+
+		try {
+			detailBean = sd.SelectDate(request.getParameter("order_id"));
+			request.setAttribute("detailBean", detailBean);
+			
+		}catch(SQLException | ClassNotFoundException e) {
+			e.printStackTrace();
+			request.setAttribute("error_msg", e.getMessage());
+			//エラーページ転送
+			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
+			return;
+		}
+
+		request.getRequestDispatcher("/WEB-INF/detailwindow.jsp").forward(request, response);
 	}
 
 	/**

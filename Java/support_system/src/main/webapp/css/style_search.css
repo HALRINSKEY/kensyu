@@ -1,0 +1,313 @@
+@import url(sanitize.css);
+html{
+    height:100%;
+}
+
+body{
+    background-color: #fff;
+    font-size: 11px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+header{
+    height: 30px;
+    width: auto;
+    background-color: #bdd7ee;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin: 5px;
+    width: auto;
+    height: 16.5px;
+}
+
+header p{
+    width: auto;
+    height: auto;
+    font-weight:bold;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+header .left{
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .user_name{
+    margin-right: 5px;
+    border: solid;
+    border-color: #000;
+    border-width : thin;
+}
+
+header .user_name p{
+    margin: 4px;
+    padding: 0 10px;
+}
+
+header .logout button{
+    background-color: #fff;
+    border-radius: 5px;
+    border-width: thin;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+/**********************************************************/
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.container p{
+    margin: 5px 0;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.container .search{
+    order: 2;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.container .search .search_input{
+    width: 93%;
+}
+
+.container .search label{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.container .search input{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.container .search .short_input input{
+    width: 37.8%;
+}
+
+.container .search .long_input input{
+    width: 78%;
+}
+
+.container .search span{
+    display: inline-block;
+    margin: 0px;
+	margin-top: 20px;
+    vertical-align: middle;
+    width: 10px;
+}
+
+.container .search .long_input #repair{
+    margin-left: 4px;
+}
+
+.container .search button{
+    display: inline-block;
+    margin-top: 20px;
+    border-color: #000;
+    background-color: #f8cbad;
+    border: solid;
+    border-width: thin;
+    width: 100px;
+    padding: 5px; 
+    border-radius: 5px;
+    
+}
+
+.container .search .btn{
+    text-align: right;
+    width: 100%;
+}
+
+/**********************************************************/
+.container .menu{
+	width: 20%;
+	height: 100%;
+    order: 1;
+    background-color: #e2efda;
+    
+}
+
+.container button{
+    border: none;
+    text-align: center;
+    padding: 2px;
+}
+
+#change_search{
+    background-color: #f8cbad;
+    width: 100%;
+}
+
+#change_import{
+    background-color: #ffe699;
+    width: 100%;
+}
+
+.container .change{
+    margin-top: 24px;
+}
+
+/********************************************************/
+
+.container .search .result .count{
+	display: flex;
+	width: 25%;
+	background-color: #ffe699;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.container .search .result .count .countnum{
+	margin: 0 auto;
+	width: auto;
+    text-align: center;
+}
+
+.container .search .result .count .countnum p{
+	margin: 0;
+	width: auto;
+}
+
+/*******************************************************/
+
+.container .search .result .result_list{
+	display: flex;
+	flex-wrap: wrap; 
+	width: 100%;
+    background-color: #ffe699;
+}
+
+.container .search .result .result_list p{
+	width: 25%;
+}
+
+p.detail{
+	flex-basis: 100%;
+}
+	
+.detail .btn_result{
+	width: 93%;
+	text-align: right;
+}
+
+/**********************************************************/
+
+.container .result_detail{
+	order: 2;
+	margin-left: 40px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 60%;
+}
+
+.container .result_detail p{
+	font-weight: normal;
+}
+
+.container .result_detail .title{
+	width: 100%;
+
+}
+
+.container .result_detail .title p{
+	font-weight: bold;
+
+}
+
+.container .result_detail .detail_info{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.container .result_detail .detail_info p{
+	width: 33%;
+}
+
+.container .result_detail .detail_container{
+	width: 100%;
+}
+
+.container .result_detail .detail_container p:nth-of-type(even){
+  width: 93%;
+  height: 45px;
+  border: solid;
+  border-width: thin;
+}
+
+.container .result_detail .detail_container p:nth-of-type(odd){
+	margin-top: 20px;
+}
+
+.container .result_detail .back_btn{
+	display: inline-block;
+	width: 93%;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.container .result_detail .back_btn a{
+	width;
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	text-align: center;
+	border: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 5px;
+	background-color: #f8cbad;
+	color: black;
+	text-decoration: none;
+	padding: 7px;
+}
+
+/******************************************************************************/
+
+.container .import_container{
+	order: 2;
+	margin-left: 40px;
+	width: 74%;
+
+}
+
+.container .import_container input[type=file]{
+  display: none;
+}
+
+.container .import_label{
+	display: inline-block;
+	border: 1px solid #000;
+	width: 97%;
+	height: 20px;
+}
+
+.file_input{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.file_input label{
+	vertical-align: middle;
+}

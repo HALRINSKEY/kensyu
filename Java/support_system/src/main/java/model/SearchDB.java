@@ -15,6 +15,15 @@ public class SearchDB {
 			//データベースに接続して検索結果取得
 			return repairDAO.getResult(con,inputBean);
 		}
-    } 
+    }
+	
+	public SearchBean SelectDate (String order_id) throws SQLException, ClassNotFoundException{
+		try (Connection con = RepairDAO.getConnection()) {
+			//DAOの初期化
+			RepairDAO repairDAO = new RepairDAO();
+			//データベースに接続して検索結果取得
+			return repairDAO.selectDate(con,order_id);
+		}
+	}
 
 }

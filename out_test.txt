@@ -1,0 +1,126 @@
++----+----------+-----------+--------------+--------------+------------+--------------+----------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+---------+---------------------+---------------------+
+| id | order_id | serial_no | product_code | product_name | repair_end | repair_order | out_state                                    | check_state                                                  | repair_detail                                                                                                                          | disorder_repair | end_date   | order_date | enabled | entry_day           | update_day          |
++----+----------+-----------+--------------+--------------+------------+--------------+----------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+---------+---------------------+---------------------+
+|  1 | 750      |  29022298 | 10000        | 101          | 19970925   | 19970818     | ＰＯＷＥＲ　ＳＷ部分を棚にぶつけ破損         | 電源入らず                                                   | ハ゜ワースイッチが破損していました。            不良部品交換した後、点検、調整致しました。                                             |                 | 1997-09-25 | 1997-08-18 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  2 | 3029     |   0830346 | 10080        | 114          | 19971028   | 19971021     | ﾚﾝｼﾞ調整                                     | 電源入らず。                                                 | ヒューズ切れで、電源入りませんでした。          不良部品交換した後、点検調整致しました。                                               |                 | 1997-10-28 | 1997-10-21 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  3 | 2759     |   2561066 | 10110        | 161D         | 19971017   | 19971013     | 電源入らず　                                 | 電源入らず。                                                 | ヒューズ切れで電源入りませんでした。            不良部品交換した後、点検調整致しました。                                               |                 | 1997-10-17 | 1997-10-13 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  4 | 4666     |  28040428 | 10560        | 1041         | 19980128   | 19971204     | 出力しない（データ付）                       | 電源入らず。                                                 | 制御回路IC､TR短絡劣化交換。                   一次ﾋｭｰｽﾞ断　交換。各部点検調整しﾃﾞｰﾀ取り   致しました。                                 |                 | 1998-01-28 | 1997-12-04 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  5 | 2795     |   3970203 | 10640        | 1633         | 19971021   | 19971014     | ﾋｭｰｽﾞつまみなし                       全ﾁｪｯｸ | ヒューズホルダー，ヒューズ欠品。                電源 入らず。 | ヒューズホルダー，ヒューズ欠品でしたので        取付けた後、点検調整致しました。                                                       |                 | 1997-10-21 | 1997-10-14 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  6 | 2758     |   3130021 | 10670        | 165A         | 19971017   | 19971013     | ﾊﾟﾜｰSW破損　                                 | パワーＳＷ部　破損。                                         | パワーＳＷ部　破損で電源入りませんでしたので、  手直しを行い、点検調整致しました。                                                     |                 | 1997-10-17 | 1997-10-13 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  7 | 1435     |  15054102 | 10760        | 115A         | 19970910   | 19970902     | SW不良                                       | パワーＳＷガタ。                                             | パワーＳＷ取付け不良で電源入りませんでしたので  取付け手直しを行ない、点検調整致しました。                                             |                 | 1997-09-10 | 1997-09-02 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  8 | 345      |   6030051 | 10980        | 149-10A      | 19970805   | 19970725     | 電源入らず                                   | 電源入らず。                                                 | パワートランス不良でしたので交換し、点検調整    致しました。                                                                           |                 | 1997-08-05 | 1997-07-25 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+|  9 | 3296     |  28011247 | 10980        | 149-10A      | 19971117   | 19971027     | 過印加による内部焼損．                       | 電源入らず。                                                 | 基板のACﾗｲﾝとﾗｲﾝﾊﾟﾀｰﾝが焼失の為、手直し。    ﾗｲﾝ､GND間ｻｰｼﾞｱﾚｽﾀｰ劣化を交換。               各部点検、校正致しました。ﾃｽﾄｺｰﾄﾞ赤ｸﾘｯﾌﾟ交換 |                 | 1997-11-17 | 1997-10-27 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
+| 10 | 144      |  29085526 | 11110        | AVM13        | 19970729   | 19970722     | 各レンジ不安定                               | 電源入らず。                                                 | ヒュース゛が切れ欠品になっていました。２００Ｖ  ラインになっていましたので０．１ＡＳＢヒュース゛を入れ動作点検を行いました。           |                 | 1997-07-29 | 1997-07-22 |       0 | 2024-03-13 15:32:28 | 2024-03-13 15:32:28 |
++----+----------+-----------+--------------+--------------+------------+--------------+----------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+---------+---------------------+---------------------+
+
+
+
+750, 29022298,10000,101,19970925,19970818,ＰＯＷＥＲ　ＳＷ部分を棚にぶつけ破損,電源入らず,ハ゜ワースイッチが破損していました。            不良部品交換した後、点検、調整致しました。,,1997.09.25,1997.08.18
+3029,  0830346,10080,114,19971028,19971021,ﾚﾝｼﾞ調整,電源入らず。,ヒューズ切れで、電源入りませんでした。          不良部品交換した後、点検調整致しました。,,1997.10.28,1997.10.21
+2759,  2561066,10110,161D,19971017,19971013,電源入らず　,電源入らず。,ヒューズ切れで電源入りませんでした。            不良部品交換した後、点検調整致しました。,,1997.10.17,1997.10.13
+
+
+
+-------------------------------------------------------------------------------------------------
+
+mysql -u root -p --local_infile=1
+set persist local_infile=1
+
+SHOW VARIABLES LIKE 'local_infile';
+#mysql側の「local_infile」の現在の設定値(デフォルト値)を確認
+mysql> SELECT @@local_infile;
++----------------+
+| @@local_infile |
++----------------+
+|              0 |
++----------------+
+1 row in set (0.00 sec)
+
+
+#mysqlで、「local_infile=1」を設定
+mysql> SET PERSIST local_infile= 1;
+Query OK, 0 rows affected (0.00 sec)
+
+
+#設定後の確認
+mysql> SELECT @@local_infile;
++----------------+
+| @@local_infile |
++----------------+
+|              1 |
++----------------+
+1 row in set (0.00 sec)
+
+
+------------------------------------------------------------------------------------------------
+
+
+select * from repair_table limit 10;
+ select * from repair_table order by id desc limit 1;
+
+load data local infile "C:\\Users\\HARUTO YOKOGOSHI\\Desktop\\test.csv" into table repair_table FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (order_id,serial_no,product_code,product_name,repair_end,repair_order,out_state,check_state,repair_detail,disorder_repair,end_date,order_date)
+
+select * from repair_table where order_id like '%750%';
+select * from repair_table where order_date between '2000-12-12' and '2000-12-12';
+
+---------------------------------------------------------------------------------------------
+
+SET SESSION FOREIGN_KEY_CHECKS=0;
+
+/* Drop Tables */
+
+DROP TABLE IF EXISTS repair_table;
+
+CREATE TABLE repair_table
+(
+	id int NOT NULL AUTO_INCREMENT,
+	order_id varchar(12) NOT NULL,
+	serial_no varchar(12),
+	product_code varchar(12) NOT NULL,
+	product_name varchar(64) NOT NULL,
+	repair_end varchar(12) NOT NULL,
+	repair_order varchar(12) NOT NULL,
+	out_state varchar(128),
+	check_state varchar(160),
+	repair_detail varchar(160),
+	disorder_repair varchar(160),
+	end_date date NOT NULL,
+	order_date date NOT NULL,
+	enabled int NOT NULL,
+	entry_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	update_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (id),
+	UNIQUE (id),
+	UNIQUE (order_id)
+);
+
+
+
+
+CREATE TABLE user_table
+(
+	id int NOT NULL AUTO_INCREMENT,
+	user_id varchar(64) NOT NULL,
+	password varchar(64) NOT NULL,
+	class_code int DEFAULT 0 NOT NULL,
+	user_name varchar(64) NOT NULL,
+	enabled int DEFAULT 0 NOT NULL,
+	entry_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	update_day timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (id),
+	UNIQUE (id)
+);
+
+INSERT INTO user_table VALUES (1,'0001','pass1');
+insert into user_table (user_id,password,user_name) values ('0001','pass1','ユーザー1');
+
+
+load data local infile 'C:\\研修\\kensyu\\Java\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\support_system\\upload' into table repair_table FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (order_id,serial_no,product_code,product_name,repair_end,repair_order,out_state,check_state,repair_detail,disorder_repair,end_date,order_date)
+
+
+
+
+int i = s.executeUpdate("load data local infile 'E:\\Book1.csv' into table sample.copy_table fields terminated by ',' optionally enclosed by '\"' lines terminated by '\r\n'");
+int i = s.executeUpdate("load data local infile 'E:\\Book1.csv' into table sample.copy_table fields terminated by ',' optionally enclosed by '"' lines terminated by '\r\n'")
+final String sql = "load data local infile 'C:\\Users\\HARUTO YOKOGOSHI\\Desktop\\test2.csv' into table repair_table FIELDS TERMINATED BY ',' optionally enclosed by '\"' LINES TERMINATED BY '\r\n' (order_id,serial_no,product_code,product_name,repair_end,repair_order,out_state,check_state,repair_detail,disorder_repair,end_date,order_date)";
+

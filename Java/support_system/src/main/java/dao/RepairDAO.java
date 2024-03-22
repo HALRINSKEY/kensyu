@@ -87,4 +87,42 @@ public class RepairDAO extends ConectionBase{
          }
         
     }
+    
+    public SearchBean selectDate(Connection con, String order_id) throws SQLException{
+        final String sql = "select *from repair_table where order_id=?";
+        SearchBean selectBean = new SearchBean();
+
+        try (PreparedStatement stmt = con.prepareStatement(sql);) {
+            stmt.setString(1, order_id);
+
+            //SQL実行
+			try (ResultSet rs = stmt.executeQuery();) {
+
+				//SQLで検索でいると、if文の中に入る
+				if (rs.next()) {
+
+					//取得した値をBeanにセット
+					selectBean.setOrder_id(rs.getString("repair_table.order_id"));
+                    selectBean.setSerial_no(rs.getString("repair_table.serial_no"));
+                    selectBean.setProduct_code(rs.getString("repair_table.product_code"));
+                    selectBean.setProduct_name(rs.getString("repair_table.product_name"));
+					selectBean.setOrder_date(rs.getString("repair_table.order_date"));
+                    selectBean.setEnd_date(rs.getString("repair_table.end_date"));
+                    selectBean.setOut_state(rs.getString("repair_table.out_state"));
+                    selectBean.setCheck_state(rs.getString("repair_table.check_state"));
+                    selectBean.setRepair_detail(rs.getString("repair_table.repair_detail"));
+                    selectBean.setDisorder_repair(rs.getString("repair_table.disorder_repair"));
+				}
+
+			}
+		} catch (SQLException e) {
+			System.out.println("SQLException: " + e.getMessage());
+			System.out.println("SQLState: " + e.getSQLState());
+			System.out.println("VendorError: " + e.getErrorCode());
+			e.printStackTrace();
+			throw e;
+		}
+
+    	return selectBean;
+    }
 }

@@ -8,37 +8,38 @@ import dao.UserDAO;
 
 public class Authenicate {
     private String error_msg = "";
+    private String user_name = "";
+    private UserBean DBbean = new UserBean();
 
-    public boolean Check(String user_id, String password)throws SQLException, ClassNotFoundException {
-        
-        
+    public Authenicate(String user_id)throws SQLException, ClassNotFoundException {
         try (Connection con = UserDAO.getConnection();) {
 			UserDAO userDAO = new UserDAO();
-            UserBean DBbean = new UserBean();
+            DBbean = new UserBean();
 			//データベースに接続して、ID,PWを取得
 			DBbean = userDAO.getUserInfo(con, user_id);
-
-            //UserIDの存在を確認
-            if(DBbean.getUser_id() == null) {
-                //JSPへのkeyと値をセット
-                //エラーページ転送
-                error_msg = "ユーザーIDが存在しません";
-                return false;
-            }
-
-            //パスワードチェック
-            if(!(DBbean.getPassword().equals(password))){
-				//JSPへのkeyと値をセット
-                error_msg = "パスワードが間違っています";
-				return false;
-			}
-
-        return true;
-		}   
+            this.user_name = DBbean.getUser_name();
+        }
     }
+
+    public boolean Check(String password){
+        if(DBbean.getUser_id() == null) {//UserIDの存在を確認
+            error_msg = "ユーザーIDが存在しません";
+            return false;
+        }else if(!(DBbean.getPassword().equals(password))){//パスワードチェック
+            error_msg = "パスワードが間違っています";
+			return false;
+        }else{
+            return true;
+        }
+	}   
+    
 
     public String getError_msg() {
         return error_msg;
+    }
+
+    public String getUser_name() {
+        return user_name;
     }
     
 }

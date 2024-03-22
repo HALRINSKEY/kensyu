@@ -8,7 +8,7 @@ public class ConectionBase {
     //DBへの接続を開く
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         //データベースdb1接続へのURL
-        final String url = "jdbc:mysql://localhost:3306/dbtest?characterEncoding=UTF-8";
+        final String url = "jdbc:mysql://localhost:3306/dbtest?characterEncoding=UTF-8&allowLoadLocalInfile=true";
         //DBのユーザー
         final String user_name = "test";
         //DBのパスワード
