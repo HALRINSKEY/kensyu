@@ -54,7 +54,7 @@
 		</div>
 
 	<div class="menu">
-		<form class="change">
+		<form class="change" action="ChangeSearchWindow" method="post">
 			<button type="submit" id="change_search">故障情報検索</button>
 		</form>
 

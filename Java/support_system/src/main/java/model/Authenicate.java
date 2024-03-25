@@ -23,10 +23,10 @@ public class Authenicate {
 
     public boolean Check(String password){
         if(DBbean.getUser_id() == null) {//UserIDの存在を確認
-            error_msg = "ユーザーIDが存在しません";
+            error_msg = "ユーザーID,パスワードが間違っています";
             return false;
         }else if(!(DBbean.getPassword().equals(password))){//パスワードチェック
-            error_msg = "パスワードが間違っています";
+            error_msg = "ユーザーID,パスワードが間違っています";
 			return false;
         }else{
             return true;

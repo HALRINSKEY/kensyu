@@ -28,7 +28,7 @@ public class ImportDAO extends ConectionBase{
 		//SQL実行の準備
 		try (PreparedStatement stmt = con.prepareStatement(sql);) {
 
-			System.out.println(stmt);
+			//System.out.println(stmt);
 
 			//SQL実行
 			int rs = stmt.executeUpdate();

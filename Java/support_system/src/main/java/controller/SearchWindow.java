@@ -71,6 +71,7 @@ public class SearchWindow extends HttpServlet {
 		// System.out.println("repair_detail:"+inputBean.getRepair_detail());
 		// System.out.println("disorder_repair:"+inputBean.getDisorder_repair());
 		
+		request.setAttribute("inputBean", inputBean);
 
 		try {
 			SearchDB searchDB = new SearchDB();
@@ -130,12 +131,12 @@ public class SearchWindow extends HttpServlet {
 			}
 		}catch(IllegalArgumentException e) {
 			e.printStackTrace();
-			request.setAttribute("error_msg", e.getMessage());
+			request.setAttribute("error_msg", "ユーザーID,パスワードが間違っています");
 			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
 			return;
 		}catch(SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
-			request.setAttribute("error_msg", e.getMessage());
+			request.setAttribute("error_msg", "ユーザーID,パスワードが間違っています");
 			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
 			return;
 		}

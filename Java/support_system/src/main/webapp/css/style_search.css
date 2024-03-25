@@ -131,7 +131,7 @@ header .logout button{
     
 }
 
-.container .search .btn{
+.container .btn{
     text-align: right;
     width: 100%;
 }
@@ -259,15 +259,14 @@ p.detail{
 	margin-top: 20px;
 }
 
-.container .result_detail .back_btn{
+.back_btn{
 	display: inline-block;
 	width: 93%;
 	text-align: right;
 	margin-top: 20px;
 }
 
-.container .result_detail .back_btn a{
-	width;
+.back_btn a{
 	display: inline-block;
 	width: 100px;
 	height: 32px;
@@ -287,7 +286,7 @@ p.detail{
 .container .import_container{
 	order: 2;
 	margin-left: 40px;
-	width: 74%;
+	width: 100%;
 
 }
 
@@ -311,3 +310,36 @@ p.detail{
 .file_input label{
 	vertical-align: middle;
 }
+
+.file_input span{
+    display: inline-block;
+    padding: 1px;
+}
+
+form[class="import"]{
+	width: 92%;
+}
+
+.container .import_container button{
+	display: inline-block;
+    margin-top: 20px;
+    border-color: #000;
+    background-color: #f8cbad;
+    border: solid;
+    border-width: thin;
+    width: 100px;
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+/******************************************************/
+
+.error_title{
+	text-align: center;
+	font-size: 25px;
+}
+
+.error_msg{
+	text-align: center
+}
+

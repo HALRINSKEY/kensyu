@@ -32,7 +32,9 @@
 				<div class="file_input">
 				<label class="import_label" for="import"><span id="file-selected"></span></label><input type="file"name="csv_file" id="import"/><label for="import"><img src="./img/file_icon.png"></label><br>
 				</div>
+				<div class="btn">
 				<button type="submit">インポート</button>
+				</div>
 			</form>
 		</div>
 	
@@ -42,7 +44,7 @@
 				<button type="submit" id="change_search">故障情報検索</button>
 			</form>
 		
-			<form class="change">
+			<form class="change" action="ChangeImportWindow" method="post">
 				<button type="submit" id="change_import">データインポート</button>
 			</form>
 		</div>

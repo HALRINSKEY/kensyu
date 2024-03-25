@@ -63,7 +63,7 @@ public class ImportWindow extends HttpServlet {
 		}
 		catch(SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
-			request.setAttribute("error_msg", e.getMessage());
+			request.setAttribute("error_msg", "ファイルの読み込みに失敗しました");
 			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
 			return;
 		}
@@ -71,12 +71,13 @@ public class ImportWindow extends HttpServlet {
 		request.getRequestDispatcher("/WEB-INF/importwindow.jsp").forward(request, response);
 	}
 
-	protected void service(HttpServletRequest request, HttpServletResponse response){
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		try {
 		  super.service( request, response);
 		}catch(Exception e){
 			e.printStackTrace();
-			
+			request.setAttribute("error_msg", "ファイルの読み込みに失敗しました");
+			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
 			return;
 		}
 	  }

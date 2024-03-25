@@ -30,19 +30,21 @@
 
 	    		<form action="SearchWindow" method="get">
 
+					<c:set var="inputBean" value="${inputBean}"/>
+
 					<div class="short_input">
-					<label for="order_date">受付期間</label>		<input type="date"name="order_date_start"/> <span>~</span> <input type="date"name="order_date_end"/><br>
-					<label for="end_date">修理完了期間</label>		<input type="date"name="end_date_start"/> <span>~</span> <input type="date"name="end_date_end"/><br>
-					<label for="order_id">受付番号</label>			<input type="text"name="order_id"/><br>
-					<label for="product_code">品名コード</label>	<input type="text"name="product_code"/><br>
-					<label for="product_name">品名</label>			<input type="text"name="product_name"/><br>
-					<label for="serial_no">シリアルNO</label>		<input type="text"name="serial_no"/><br>
+					<label for="order_date">受付期間</label>		<input type="date"name="order_date_start" value="${inputBean.order_date_start}"/> <span>~</span> <input type="date"name="order_date_end" value="${inputBean.order_date_end}"/><br>
+					<label for="end_date">修理完了期間</label>		<input type="date"name="end_date_start" value="${inputBean.end_date_start}"/> <span>~</span> <input type="date"name="end_date_end" value="${inputBean.end_date_end}"/><br>
+					<label for="order_id">受付番号</label>			<input type="text"name="order_id" value="${inputBean.order_id}"/><br>
+					<label for="product_code">品名コード</label>	<input type="text"name="product_code" value="${inputBean.product_code}"/><br>
+					<label for="product_name">品名</label>			<input type="text"name="product_name" value="${inputBean.product_name}"/><br>
+					<label for="serial_no">シリアルNO</label>		<input type="text"name="serial_no" value="${inputBean.serial_no}"/><br>
 					</div>
 					<div class="long_input">
-					<label for="out_state">故障状況</label>			<input type="text"name="out_state"/><br>
-					<label for="check_state">弊社確認事項</label>	<input type="text"name="check_state"/><br>
-					<label for="repair_detail">修理内容</label>		<input type="text"name="repair_detail"/><br>
-					<label for="disorder_repair">以上処置内容</label><input type="text"name="disorder_repair" id="repair"/><br>
+					<label for="out_state">故障状況</label>			<input type="text"name="out_state" value="${inputBean.out_state}"/><br>
+					<label for="check_state">弊社確認事項</label>	<input type="text"name="check_state" value="${inputBean.check_state}"/><br>
+					<label for="repair_detail">修理内容</label>		<input type="text"name="repair_detail" value="${inputBean.repair_detail}"/><br>
+					<label for="disorder_repair">以上処置内容</label><input type="text"name="disorder_repair" id="repair" value="${inputBean.disorder_repair}"/><br>
 					</div>
 					<div class="btn">
 					<button type="submit">検索</button>
@@ -87,7 +89,7 @@
 		</div>
 
 		<div class="menu">
-			<form class="change">
+			<form class="change" action="ChangeSearchWindow" method="post">
 				<button type="submit" id="change_search">故障情報検索</button>
 			</form>
 
