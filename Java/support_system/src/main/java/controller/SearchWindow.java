@@ -23,6 +23,7 @@ public class SearchWindow extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
+	 * 検索条件取得
      * @see HttpServlet#HttpServlet()
      */
     public SearchWindow() {
@@ -71,6 +72,7 @@ public class SearchWindow extends HttpServlet {
 		// System.out.println("repair_detail:"+inputBean.getRepair_detail());
 		// System.out.println("disorder_repair:"+inputBean.getDisorder_repair());
 		
+		//検索条件の表示
 		request.setAttribute("inputBean", inputBean);
 
 		try {
@@ -83,8 +85,8 @@ public class SearchWindow extends HttpServlet {
 			// 	System.out.println(str.getOrder_date());
 			// 	System.out.println(str.getProduct_name());
 			// }
-			request.setAttribute("resultCount", resultList.size());
-			request.setAttribute("resultList", resultList);
+			request.setAttribute("resultCount", resultList.size()); //検索件数
+			request.setAttribute("resultList", resultList);		 //検索結果
 
 			
 		}catch(SQLException | ClassNotFoundException e) {
@@ -95,6 +97,7 @@ public class SearchWindow extends HttpServlet {
 			return;
 		}
 
+		//検索結果表示
 		request.getRequestDispatcher("/WEB-INF/searchwindow.jsp").forward(request, response);
 	}
 
@@ -113,7 +116,7 @@ public class SearchWindow extends HttpServlet {
 		String user_id = request.getParameter("user_id");
 		String password = request.getParameter("password");
 		String user_name = "";
-		//社員IDの確認
+		//IDの確認
 		System.out.println("------------------------");
 		System.out.println("user_id:" + user_id);
 		System.out.println("password:" + password);

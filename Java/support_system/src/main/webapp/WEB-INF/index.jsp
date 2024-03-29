@@ -19,11 +19,11 @@
 	<div class="container">
 		<form  class="inputbox" action="SearchWindow" method="post">
 			<div class="id">
-				<label for="member_id">ID</label><input id="member_id" type="text"name="user_id"value="0001" maxlength="64" pattern="^[a-zA-Z0-9]+$" />
+				<label for="member_id">ID</label><input id="member_id" type="text"name="user_id" maxlength="64" pattern="^[a-zA-Z0-9]+$" />
 			</div>
 			<br>
 			<div class="pass">
-				<label for="password">パスワード</label><input id="password" type="password"name="password"value="pass1"maxlength="64" pattern="^[a-zA-Z0-9]+$" />
+				<label for="password">パスワード</label><input id="password" type="password"name="password" maxlength="64" pattern="^[a-zA-Z0-9]+$" />
 				<div class="button">
 					<input type="button" id="button" value="表示" onclick="pushHideButton();">
 				</div>

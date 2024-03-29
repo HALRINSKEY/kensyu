@@ -23,6 +23,7 @@
 		</div>
 	</header>
 
+	<div class="search_container">
 	<div class="container">
 		<div class="search">
 			<div class="search_input">
@@ -53,38 +54,6 @@
 				</form>
 			</div>
 
-			<div class="result">
-			<!--検索結果-->
-				<c:set var="count" value="${resultCount}"/>
-				<c:if test="${count != null}">
-					<div class="count">
-					<p>検索結果</p>
-					<div class="countnum"><p><c:out value="${count}"/>件</p></div>
-					</div>
-				</c:if>
-
-				<c:forEach var="result" items="${resultList}" varStatus="status">
-
-					<form class="detail" action="DetailWindow" method="post">
-
-					<div class="result_list">
-					<p>受付番号：<c:out value="${result.order_id}" /></p>
-					<p>品名：<c:out value="${result.product_name}"/></p>
-					<p>受付日：<c:out value="${result.order_date}"/></p>
-					<p>修理完了日：<c:out value="${result.end_date}"/></p>
-					<p class="detail">故障状況：<c:out value="${result.out_state}"/></p>
-					</div>
-
-					<input type="hidden" name="order_id" value="${status.current.order_id}"/>
-						<div class="btn_result">
-						<button type="submit">詳細</button>
-						</div>
-					</form>
-
-					<br>
-
-				</c:forEach>
-			</div>
 			
 		</div>
 
@@ -97,7 +66,45 @@
 				<button type="submit" id="change_import">データインポート</button>
 			</form>
 		</div>
+
+		
 	</div>
+	
+	<div class="result_container">
+		
+		<div class="result">
+			<!--検索結果-->
+			<c:set var="count" value="${resultCount}"/>
+			<c:if test="${count != null}">
+				<div class="count">
+				<p>検索結果</p>
+				<div class="countnum"><p><c:out value="${count}"/>件</p></div>
+				</div>
+			</c:if>
+
+			<c:forEach var="result" items="${resultList}" varStatus="status">
+				<form class="detail" action="DetailWindow" method="post">
+					<div class="result_list">
+						<p>受付番号：<c:out value="${result.order_id}" /></p>
+						<p>品名：<c:out value="${result.product_name}"/></p>
+						<p>受付日：<c:out value="${result.order_date}"/></p>
+						<p>修理完了日：<c:out value="${result.end_date}"/></p>
+						<p class="detail">故障状況：<c:out value="${result.out_state}"/></p>
+					</div>
+					<input type="hidden" name="order_id" value="${status.current.order_id}"/>
+						<div class="btn_result">
+							<button type="submit">詳細</button>
+						</div>
+				</form>
+				<br>
+			</c:forEach>
+		</div>
+
+		<div class="side">
+		</div>
+	</div>
+	</div>
+	
 
 </body>
 </html>

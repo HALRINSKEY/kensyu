@@ -139,7 +139,7 @@ header .logout button{
 /**********************************************************/
 .container .menu{
 	width: 20%;
-	height: 100%;
+	height: auto;
     order: 1;
     background-color: #e2efda;
     
@@ -167,45 +167,89 @@ header .logout button{
 
 /********************************************************/
 
-.container .search .result .count{
+.result .count{
 	display: flex;
 	width: 25%;
 	background-color: #ffe699;
 	align-items: center;
 	margin: 20px 0;
+	padding: 2px;
 }
 
-.container .search .result .count .countnum{
+.result .count .countnum{
 	margin: 0 auto;
 	width: auto;
     text-align: center;
 }
 
-.container .search .result .count .countnum p{
+.result .count .countnum p{
 	margin: 0;
 	width: auto;
 }
 
 /*******************************************************/
+.search_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
-.container .search .result .result_list{
+.result_container{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    width: 100%;
+}
+
+.result{
+    margin-left: 40px;
+}
+
+ .result .result_list{
 	display: flex;
 	flex-wrap: wrap; 
 	width: 100%;
     background-color: #ffe699;
 }
 
-.container .search .result .result_list p{
+ .result .result_list p{
 	width: 25%;
+	padding: 2px;
 }
 
 p.detail{
 	flex-basis: 100%;
 }
+
+.result_container button{
+    display: inline-block;
+    margin-top: 20px;
+    border-color: #000;
+    background-color: #f8cbad;
+    border: solid;
+    border-width: thin;
+    width: 100px;
+    padding: 5px; 
+    border-radius: 5px;
+    
+}
 	
 .detail .btn_result{
 	width: 93%;
 	text-align: right;
+}
+
+.result_container .result{
+    order: 2;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.side{
+    order: 1;
+    width: 20%;
+    height: auto;
+    background-color: #e2efda;
 }
 
 /**********************************************************/
@@ -342,4 +386,8 @@ form[class="import"]{
 .error_msg{
 	text-align: center
 }
+
+/********************************************************************/
+
+
 

@@ -32,6 +32,9 @@ public class ImportDAO extends ConectionBase{
 
 			//SQL実行
 			int rs = stmt.executeUpdate();
+			if (rs==0){
+				throw new SQLException("0");//0:データベースには書き込んでない  1:データベースに書き込んでる
+			}
             System.out.println(rs + ":import success");
 				
 		} catch (SQLException e) {
